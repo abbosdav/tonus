@@ -1,0 +1,16 @@
+.input{
+    &__row{
+        margin: 15px 0px;
+        &.df{
+            display: flex;
+            justify-content: center;
+        }
+        &.end{
+            text-align: right;
+        }
+    }
+}
+
+.p-inputtext{
+    width: 100%;
+}

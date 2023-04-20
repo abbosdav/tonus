@@ -1,18 +1,15 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <h1>Home page</h1>
+  <button @click="remove">Logout</button>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+<script setup>
+import { getCookie } from '@/utils/cookies';
 
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
+const remove = ()=>{
+  
+  console.log(getCookie('accessToken'));
 }
+
+
 </script>
